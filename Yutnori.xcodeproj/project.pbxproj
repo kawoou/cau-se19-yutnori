@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		349861EB078F86AA4DC2550A /* Pods_YutnoriTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0CCD53BDA5BBC2E48E8775 /* Pods_YutnoriTests.framework */; };
+		642E1504C38A2FF5886B049A /* Pods_Yutnori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E88E12FEA6DC7FB9E5EEE8 /* Pods_Yutnori.framework */; };
+		9D316BEB229D0C960038E86C /* CheckerTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316BEA229D0C960038E86C /* CheckerTable.swift */; };
+		9D316BEF229D0D250038E86C /* EntitySupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316BED229D0D250038E86C /* EntitySupport.swift */; };
+		9D316BF0229D0D250038E86C /* TableSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316BEE229D0D250038E86C /* TableSupport.swift */; };
+		9D316BF2229D0D690038E86C /* PlayerTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316BF1229D0D690038E86C /* PlayerTable.swift */; };
+		9D316BF4229D0DBC0038E86C /* GameTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316BF3229D0DBC0038E86C /* GameTable.swift */; };
+		9D316BF7229D0EB90038E86C /* Checker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316BF6229D0EB90038E86C /* Checker.swift */; };
+		9D316BF9229D0ECB0038E86C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316BF8229D0ECB0038E86C /* Player.swift */; };
+		9D316BFB229D0ED50038E86C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316BFA229D0ED50038E86C /* Game.swift */; };
+		9D316BFF229D12D90038E86C /* AbstractError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316BFD229D12D90038E86C /* AbstractError.swift */; };
+		9D316C00229D12D90038E86C /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316BFE229D12D90038E86C /* CommonError.swift */; };
+		9D316C03229D13640038E86C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C02229D13640038E86C /* Repository.swift */; };
+		9D316C09229D13F00038E86C /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C08229D13F00038E86C /* RepositoryError.swift */; };
+		9D316C0C229D15FD0038E86C /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C0B229D15FD0038E86C /* GameRepository.swift */; };
+		9D316C0E229D1B9A0038E86C /* GameRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C0D229D1B9A0038E86C /* GameRepositoryImpl.swift */; };
+		9D316C11229D23E10038E86C /* RealmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C10229D23E10038E86C /* RealmType.swift */; };
+		9D316C13229D3BE90038E86C /* PlayerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C12229D3BE90038E86C /* PlayerRepository.swift */; };
+		9D316C15229D41900038E86C /* PlayerRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C14229D41900038E86C /* PlayerRepositoryImpl.swift */; };
+		9D316C19229D428F0038E86C /* CheckerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C18229D428F0038E86C /* CheckerRepository.swift */; };
+		9D316C1B229D42AA0038E86C /* CheckerRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C1A229D42AA0038E86C /* CheckerRepositoryImpl.swift */; };
+		9D316C1E229D42FC0038E86C /* CheckerServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C1D229D42FC0038E86C /* CheckerServiceImpl.swift */; };
+		9D316C20229D43E50038E86C /* IdentityTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C1F229D43E50038E86C /* IdentityTable.swift */; };
+		9D316C23229E94DD0038E86C /* ServiceDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C22229E94DD0038E86C /* ServiceDependency.swift */; };
+		9D316C25229E95090038E86C /* CoreDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C24229E95090038E86C /* CoreDependency.swift */; };
+		9D316C27229E95360038E86C /* RepositoryDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C26229E95360038E86C /* RepositoryDependency.swift */; };
+		9D316C29229E98840038E86C /* SchedulerDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C28229E98840038E86C /* SchedulerDependency.swift */; };
+		9D316C2B229E99A20038E86C /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C2A229E99A20038E86C /* AppDependency.swift */; };
+		9D316C2D229EC2A90038E86C /* CheckerServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D316C2C229EC2A90038E86C /* CheckerServiceError.swift */; };
+		9D4C89E522A4FA9D005F571F /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89E422A4FA9D005F571F /* RepositorySpec.swift */; };
+		9D4C89E722A4FC37005F571F /* DummyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89E622A4FC37005F571F /* DummyPlayer.swift */; };
+		9D4C89E922A4FD1F005F571F /* GameRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89E822A4FD1F005F571F /* GameRepositorySpec.swift */; };
+		9D4C89EB22A4FDEB005F571F /* PlayerRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89EA22A4FDEB005F571F /* PlayerRepositorySpec.swift */; };
+		9D4C89ED22A4FF8A005F571F /* CheckerServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89EC22A4FF8A005F571F /* CheckerServiceSpec.swift */; };
+		9D4C89F022A50508005F571F /* MockCheckerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89EF22A50508005F571F /* MockCheckerRepository.swift */; };
+		9D4C89F322A505E6005F571F /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89F222A505E6005F571F /* MockError.swift */; };
+		9D4C89F522A56D30005F571F /* GameServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89F422A56D30005F571F /* GameServiceSpec.swift */; };
+		9D4C89F722A56F15005F571F /* MockGameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89F622A56F15005F571F /* MockGameRepository.swift */; };
+		9D4C89F922A57332005F571F /* MockPlayerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89F822A57332005F571F /* MockPlayerRepository.swift */; };
+		9D4C89FB22A57F7A005F571F /* PlayerServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89FA22A57F7A005F571F /* PlayerServiceSpec.swift */; };
+		9D4C89FE22A68674005F571F /* MainViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C89FD22A68674005F571F /* MainViewModelSpec.swift */; };
+		9D4C8A0122A686C9005F571F /* MockGameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C8A0022A686C9005F571F /* MockGameService.swift */; };
+		9D4C8A0322A687C2005F571F /* MockCheckerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C8A0222A687C2005F571F /* MockCheckerService.swift */; };
+		9D4C8A0522A68925005F571F /* MockPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C8A0422A68925005F571F /* MockPlayerService.swift */; };
+		9D4C8A0722A68E92005F571F /* ResultViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C8A0622A68E92005F571F /* ResultViewModelSpec.swift */; };
+		9DA7C78F229ED72100402E82 /* GameServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C78E229ED72100402E82 /* GameServiceImpl.swift */; };
+		9DA7C791229ED85D00402E82 /* GameServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C790229ED85D00402E82 /* GameServiceError.swift */; };
+		9DA7C793229EE5F900402E82 /* PlayerServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C792229EE5F900402E82 /* PlayerServiceImpl.swift */; };
+		9DA7C795229EE83700402E82 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C794229EE83700402E82 /* MainViewController.swift */; };
+		9DA7C797229EE8DA00402E82 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C796229EE8DA00402E82 /* MainViewModel.swift */; };
+		9DA7C79A22A06CC700402E82 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C79922A06CC700402E82 /* ResultViewController.swift */; };
+		9DA7C79C22A06DF700402E82 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C79B22A06DF700402E82 /* ResultViewModel.swift */; };
+		9DA7C7A722A083FF00402E82 /* MockDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C7A622A083FF00402E82 /* MockDependency.swift */; };
+		9DA7C7AB22A0861100402E82 /* ErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C7AA22A0861100402E82 /* ErrorSpec.swift */; };
+		9DA7C7AD22A0878900402E82 /* CheckRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C7AC22A0878900402E82 /* CheckRepositorySpec.swift */; };
+		9DA7C7AF22A0C30100402E82 /* DummyChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C7AE22A0C30100402E82 /* DummyChecker.swift */; };
+		9DA7C7B122A0C34100402E82 /* DummyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7C7B022A0C34100402E82 /* DummyGame.swift */; };
+		9DE7EB742299255F007EA6EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7EB692299255F007EA6EE /* AppDelegate.swift */; };
+		9DE7EB752299255F007EA6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE7EB6C2299255F007EA6EE /* Assets.xcassets */; };
+		9DE7EB762299255F007EA6EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE7EB6D2299255F007EA6EE /* LaunchScreen.storyboard */; };
+		9DE7EB772299255F007EA6EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE7EB6F2299255F007EA6EE /* Main.storyboard */; };
+		9DE7EC1E229AA55B007EA6EE /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7EC15229AA55B007EA6EE /* GameState.swift */; };
+		9DE7EC1F229AA55B007EA6EE /* CheckerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7EC16229AA55B007EA6EE /* CheckerState.swift */; };
+		9DE7EC20229AA55B007EA6EE /* PlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7EC17229AA55B007EA6EE /* PlayerState.swift */; };
+		9DE7EC21229AA55B007EA6EE /* CheckerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7EC19229AA55B007EA6EE /* CheckerService.swift */; };
+		9DE7EC22229AA55B007EA6EE /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7EC1A229AA55B007EA6EE /* GameService.swift */; };
+		9DE7EC23229AA55B007EA6EE /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7EC1B229AA55B007EA6EE /* PlayerService.swift */; };
+		9DE7EC2E229B8626007EA6EE /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7EC2D229B8626007EA6EE /* BoardViewController.swift */; };
+		9DE7EC31229B88B7007EA6EE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7EC30229B88B7007EA6EE /* ViewModel.swift */; };
+		9DE7EC33229B88F2007EA6EE /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE7EC32229B88F2007EA6EE /* BoardViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DE7EB1F2299160F007EA6EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DE7EB022299160E007EA6EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DE7EB092299160E007EA6EE;
+			remoteInfo = Yutnori;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		192B90F8F258005BDF198119 /* Pods-YutnoriTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YutnoriTests.release.xcconfig"; path = "Target Support Files/Pods-YutnoriTests/Pods-YutnoriTests.release.xcconfig"; sourceTree = "<group>"; };
+		2DF4A33FCBCCF9A37FF75E54 /* Pods-Yutnori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yutnori.release.xcconfig"; path = "Target Support Files/Pods-Yutnori/Pods-Yutnori.release.xcconfig"; sourceTree = "<group>"; };
+		36E88E12FEA6DC7FB9E5EEE8 /* Pods_Yutnori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yutnori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF470F833408BD44DF95C90 /* Pods-YutnoriTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YutnoriTests.debug.xcconfig"; path = "Target Support Files/Pods-YutnoriTests/Pods-YutnoriTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D316BEA229D0C960038E86C /* CheckerTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerTable.swift; sourceTree = "<group>"; };
+		9D316BED229D0D250038E86C /* EntitySupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitySupport.swift; sourceTree = "<group>"; };
+		9D316BEE229D0D250038E86C /* TableSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSupport.swift; sourceTree = "<group>"; };
+		9D316BF1229D0D690038E86C /* PlayerTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTable.swift; sourceTree = "<group>"; };
+		9D316BF3229D0DBC0038E86C /* GameTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTable.swift; sourceTree = "<group>"; };
+		9D316BF6229D0EB90038E86C /* Checker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checker.swift; sourceTree = "<group>"; };
+		9D316BF8229D0ECB0038E86C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		9D316BFA229D0ED50038E86C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9D316BFD229D12D90038E86C /* AbstractError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractError.swift; sourceTree = "<group>"; };
+		9D316BFE229D12D90038E86C /* CommonError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		9D316C02229D13640038E86C /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		9D316C08229D13F00038E86C /* RepositoryError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
+		9D316C0B229D15FD0038E86C /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
+		9D316C0D229D1B9A0038E86C /* GameRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositoryImpl.swift; sourceTree = "<group>"; };
+		9D316C10229D23E10038E86C /* RealmType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmType.swift; sourceTree = "<group>"; };
+		9D316C12229D3BE90038E86C /* PlayerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRepository.swift; sourceTree = "<group>"; };
+		9D316C14229D41900038E86C /* PlayerRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRepositoryImpl.swift; sourceTree = "<group>"; };
+		9D316C18229D428F0038E86C /* CheckerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerRepository.swift; sourceTree = "<group>"; };
+		9D316C1A229D42AA0038E86C /* CheckerRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerRepositoryImpl.swift; sourceTree = "<group>"; };
+		9D316C1D229D42FC0038E86C /* CheckerServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerServiceImpl.swift; sourceTree = "<group>"; };
+		9D316C1F229D43E50038E86C /* IdentityTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityTable.swift; sourceTree = "<group>"; };
+		9D316C22229E94DD0038E86C /* ServiceDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDependency.swift; sourceTree = "<group>"; };
+		9D316C24229E95090038E86C /* CoreDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDependency.swift; sourceTree = "<group>"; };
+		9D316C26229E95360038E86C /* RepositoryDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDependency.swift; sourceTree = "<group>"; };
+		9D316C28229E98840038E86C /* SchedulerDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerDependency.swift; sourceTree = "<group>"; };
+		9D316C2A229E99A20038E86C /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		9D316C2C229EC2A90038E86C /* CheckerServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerServiceError.swift; sourceTree = "<group>"; };
+		9D4C89E422A4FA9D005F571F /* RepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySpec.swift; sourceTree = "<group>"; };
+		9D4C89E622A4FC37005F571F /* DummyPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPlayer.swift; sourceTree = "<group>"; };
+		9D4C89E822A4FD1F005F571F /* GameRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositorySpec.swift; sourceTree = "<group>"; };
+		9D4C89EA22A4FDEB005F571F /* PlayerRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRepositorySpec.swift; sourceTree = "<group>"; };
+		9D4C89EC22A4FF8A005F571F /* CheckerServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerServiceSpec.swift; sourceTree = "<group>"; };
+		9D4C89EF22A50508005F571F /* MockCheckerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCheckerRepository.swift; sourceTree = "<group>"; };
+		9D4C89F222A505E6005F571F /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		9D4C89F422A56D30005F571F /* GameServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameServiceSpec.swift; sourceTree = "<group>"; };
+		9D4C89F622A56F15005F571F /* MockGameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGameRepository.swift; sourceTree = "<group>"; };
+		9D4C89F822A57332005F571F /* MockPlayerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlayerRepository.swift; sourceTree = "<group>"; };
+		9D4C89FA22A57F7A005F571F /* PlayerServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerServiceSpec.swift; sourceTree = "<group>"; };
+		9D4C89FD22A68674005F571F /* MainViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelSpec.swift; sourceTree = "<group>"; };
+		9D4C8A0022A686C9005F571F /* MockGameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGameService.swift; sourceTree = "<group>"; };
+		9D4C8A0222A687C2005F571F /* MockCheckerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCheckerService.swift; sourceTree = "<group>"; };
+		9D4C8A0422A68925005F571F /* MockPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlayerService.swift; sourceTree = "<group>"; };
+		9D4C8A0622A68E92005F571F /* ResultViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModelSpec.swift; sourceTree = "<group>"; };
+		9DA7C78E229ED72100402E82 /* GameServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameServiceImpl.swift; sourceTree = "<group>"; };
+		9DA7C790229ED85D00402E82 /* GameServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameServiceError.swift; sourceTree = "<group>"; };
+		9DA7C792229EE5F900402E82 /* PlayerServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerServiceImpl.swift; sourceTree = "<group>"; };
+		9DA7C794229EE83700402E82 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9DA7C796229EE8DA00402E82 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9DA7C79922A06CC700402E82 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		9DA7C79B22A06DF700402E82 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		9DA7C7A622A083FF00402E82 /* MockDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDependency.swift; sourceTree = "<group>"; };
+		9DA7C7AA22A0861100402E82 /* ErrorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorSpec.swift; sourceTree = "<group>"; };
+		9DA7C7AC22A0878900402E82 /* CheckRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckRepositorySpec.swift; sourceTree = "<group>"; };
+		9DA7C7AE22A0C30100402E82 /* DummyChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyChecker.swift; sourceTree = "<group>"; };
+		9DA7C7B022A0C34100402E82 /* DummyGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyGame.swift; sourceTree = "<group>"; };
+		9DE7EB0A2299160E007EA6EE /* Yutnori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yutnori.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE7EB1E2299160F007EA6EE /* YutnoriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YutnoriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE7EB692299255F007EA6EE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DE7EB6C2299255F007EA6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DE7EB6E2299255F007EA6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DE7EB702299255F007EA6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DE7EB722299255F007EA6EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DE7EB7D22992582007EA6EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DE7EBD622992C60007EA6EE /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE7EBD822992C60007EA6EE /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE7EBE322992C94007EA6EE /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE7EBE522992C94007EA6EE /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE7EC15229AA55B007EA6EE /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		9DE7EC16229AA55B007EA6EE /* CheckerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckerState.swift; sourceTree = "<group>"; };
+		9DE7EC17229AA55B007EA6EE /* PlayerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerState.swift; sourceTree = "<group>"; };
+		9DE7EC19229AA55B007EA6EE /* CheckerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckerService.swift; sourceTree = "<group>"; };
+		9DE7EC1A229AA55B007EA6EE /* GameService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		9DE7EC1B229AA55B007EA6EE /* PlayerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		9DE7EC2D229B8626007EA6EE /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		9DE7EC30229B88B7007EA6EE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9DE7EC32229B88F2007EA6EE /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		AD0CCD53BDA5BBC2E48E8775 /* Pods_YutnoriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YutnoriTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1C0C73A30CAA77D9243CD3 /* Pods-Yutnori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yutnori.debug.xcconfig"; path = "Target Support Files/Pods-Yutnori/Pods-Yutnori.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DE7EB072299160E007EA6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642E1504C38A2FF5886B049A /* Pods_Yutnori.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE7EB1B2299160F007EA6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349861EB078F86AA4DC2550A /* Pods_YutnoriTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77A6A78A97784CB7EE54EA72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EBE322992C94007EA6EE /* Domain.framework */,
+				9DE7EBE522992C94007EA6EE /* Service.framework */,
+				9DE7EBD622992C60007EA6EE /* Domain.framework */,
+				9DE7EBD822992C60007EA6EE /* Service.framework */,
+				36E88E12FEA6DC7FB9E5EEE8 /* Pods_Yutnori.framework */,
+				AD0CCD53BDA5BBC2E48E8775 /* Pods_YutnoriTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A404E56F6022AEFC8E67BBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C0C73A30CAA77D9243CD3 /* Pods-Yutnori.debug.xcconfig */,
+				2DF4A33FCBCCF9A37FF75E54 /* Pods-Yutnori.release.xcconfig */,
+				5CF470F833408BD44DF95C90 /* Pods-YutnoriTests.debug.xcconfig */,
+				192B90F8F258005BDF198119 /* Pods-YutnoriTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D316BE8229D0C790038E86C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9D316C01229D135E0038E86C /* Impl */,
+				9D316C18229D428F0038E86C /* CheckerRepository.swift */,
+				9D316C0B229D15FD0038E86C /* GameRepository.swift */,
+				9D316C12229D3BE90038E86C /* PlayerRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9D316BE9229D0C820038E86C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9D316BEC229D0D250038E86C /* Support */,
+				9D316BEA229D0C960038E86C /* CheckerTable.swift */,
+				9D316C1F229D43E50038E86C /* IdentityTable.swift */,
+				9D316BF1229D0D690038E86C /* PlayerTable.swift */,
+				9D316BF3229D0DBC0038E86C /* GameTable.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9D316BEC229D0D250038E86C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9D316BED229D0D250038E86C /* EntitySupport.swift */,
+				9D316BEE229D0D250038E86C /* TableSupport.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9D316BF5229D0EAD0038E86C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9D316C1C229D42EF0038E86C /* Impl */,
+				9DE7EC19229AA55B007EA6EE /* CheckerService.swift */,
+				9DE7EC1A229AA55B007EA6EE /* GameService.swift */,
+				9DE7EC1B229AA55B007EA6EE /* PlayerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9D316BFC229D12D90038E86C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9D316BFD229D12D90038E86C /* AbstractError.swift */,
+				9D316BFE229D12D90038E86C /* CommonError.swift */,
+				9D316C08229D13F00038E86C /* RepositoryError.swift */,
+				9D316C2C229EC2A90038E86C /* CheckerServiceError.swift */,
+				9DA7C790229ED85D00402E82 /* GameServiceError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		9D316C01229D135E0038E86C /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				9D316C02229D13640038E86C /* Repository.swift */,
+				9D316C1A229D42AA0038E86C /* CheckerRepositoryImpl.swift */,
+				9D316C0D229D1B9A0038E86C /* GameRepositoryImpl.swift */,
+				9D316C14229D41900038E86C /* PlayerRepositoryImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		9D316C0A229D150B0038E86C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9D316C0F229D23D50038E86C /* Realm */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9D316C0F229D23D50038E86C /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				9D316C10229D23E10038E86C /* RealmType.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		9D316C1C229D42EF0038E86C /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				9D316C1D229D42FC0038E86C /* CheckerServiceImpl.swift */,
+				9DA7C78E229ED72100402E82 /* GameServiceImpl.swift */,
+				9DA7C792229EE5F900402E82 /* PlayerServiceImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		9D316C21229E94C70038E86C /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				9D316C2A229E99A20038E86C /* AppDependency.swift */,
+				9D316C24229E95090038E86C /* CoreDependency.swift */,
+				9D316C26229E95360038E86C /* RepositoryDependency.swift */,
+				9D316C28229E98840038E86C /* SchedulerDependency.swift */,
+				9D316C22229E94DD0038E86C /* ServiceDependency.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		9D4C89EE22A503DB005F571F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9D4C89EF22A50508005F571F /* MockCheckerRepository.swift */,
+				9D4C89F622A56F15005F571F /* MockGameRepository.swift */,
+				9D4C89F822A57332005F571F /* MockPlayerRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9D4C89F122A505DE005F571F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9D4C89F222A505E6005F571F /* MockError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		9D4C89FC22A68661005F571F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9D4C89FD22A68674005F571F /* MainViewModelSpec.swift */,
+				9D4C8A0622A68E92005F571F /* ResultViewModelSpec.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D4C89FF22A686C0005F571F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9D4C8A0222A687C2005F571F /* MockCheckerService.swift */,
+				9D4C8A0022A686C9005F571F /* MockGameService.swift */,
+				9D4C8A0422A68925005F571F /* MockPlayerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9DA7C79822A06CB000402E82 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7C79922A06CC700402E82 /* ResultViewController.swift */,
+				9DA7C79B22A06DF700402E82 /* ResultViewModel.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		9DA7C79D22A080C700402E82 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9D4C89F122A505DE005F571F /* Error */,
+				9D4C89EE22A503DB005F571F /* Repository */,
+				9DA7C7A522A083F000402E82 /* Dependency */,
+				9D4C89FF22A686C0005F571F /* Service */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		9DA7C79E22A080CD00402E82 /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7C7AE22A0C30100402E82 /* DummyChecker.swift */,
+				9DA7C7B022A0C34100402E82 /* DummyGame.swift */,
+				9D4C89E622A4FC37005F571F /* DummyPlayer.swift */,
+			);
+			path = Dummy;
+			sourceTree = "<group>";
+		};
+		9DA7C79F22A080DA00402E82 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9D4C89E422A4FA9D005F571F /* RepositorySpec.swift */,
+				9DA7C7AC22A0878900402E82 /* CheckRepositorySpec.swift */,
+				9D4C89E822A4FD1F005F571F /* GameRepositorySpec.swift */,
+				9D4C89EA22A4FDEB005F571F /* PlayerRepositorySpec.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9DA7C7A022A080DE00402E82 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9D4C89EC22A4FF8A005F571F /* CheckerServiceSpec.swift */,
+				9D4C89F422A56D30005F571F /* GameServiceSpec.swift */,
+				9D4C89FA22A57F7A005F571F /* PlayerServiceSpec.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9DA7C7A522A083F000402E82 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7C7A622A083FF00402E82 /* MockDependency.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		9DA7C7A822A085F800402E82 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7C7AA22A0861100402E82 /* ErrorSpec.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		9DA7C7A922A0860000402E82 /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7C7A822A085F800402E82 /* Error */,
+				9DA7C79F22A080DA00402E82 /* Repository */,
+				9DA7C7A022A080DE00402E82 /* Service */,
+				9D4C89FC22A68661005F571F /* ViewModel */,
+			);
+			path = Spec;
+			sourceTree = "<group>";
+		};
+		9DE7EB012299160E007EA6EE = {
+			isa = PBXGroup;
+			children = (
+				9DE7EB0C2299160E007EA6EE /* Yutnori */,
+				9DE7EB212299160F007EA6EE /* YutnoriTests */,
+				9DE7EB0B2299160E007EA6EE /* Products */,
+				7A404E56F6022AEFC8E67BBD /* Pods */,
+				77A6A78A97784CB7EE54EA72 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9DE7EB0B2299160E007EA6EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EB0A2299160E007EA6EE /* Yutnori.app */,
+				9DE7EB1E2299160F007EA6EE /* YutnoriTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DE7EB0C2299160E007EA6EE /* Yutnori */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EB6B2299255F007EA6EE /* Resources */,
+				9DE7EB672299255F007EA6EE /* Sources */,
+				9DE7EB712299255F007EA6EE /* Supporting Files */,
+			);
+			path = Yutnori;
+			sourceTree = "<group>";
+		};
+		9DE7EB212299160F007EA6EE /* YutnoriTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EB7922992582007EA6EE /* Sources */,
+				9DE7EB7C22992582007EA6EE /* Supporting Files */,
+			);
+			path = YutnoriTests;
+			sourceTree = "<group>";
+		};
+		9DE7EB672299255F007EA6EE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9D316C0A229D150B0038E86C /* Core */,
+				9D316C21229E94C70038E86C /* Dependency */,
+				9D316BFC229D12D90038E86C /* Error */,
+				9DE7EC18229AA55B007EA6EE /* Model */,
+				9DE7EC2F229B88AC007EA6EE /* Protocol */,
+				9D316BE8229D0C790038E86C /* Repository */,
+				9D316BF5229D0EAD0038E86C /* Service */,
+				9DE7EC14229AA55B007EA6EE /* Type */,
+				9DE7EC2A229B81A9007EA6EE /* UI */,
+				9DE7EB692299255F007EA6EE /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9DE7EB6B2299255F007EA6EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EB6C2299255F007EA6EE /* Assets.xcassets */,
+				9DE7EB6D2299255F007EA6EE /* LaunchScreen.storyboard */,
+				9DE7EB6F2299255F007EA6EE /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DE7EB712299255F007EA6EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EB722299255F007EA6EE /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DE7EB7922992582007EA6EE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7C79E22A080CD00402E82 /* Dummy */,
+				9DA7C79D22A080C700402E82 /* Mock */,
+				9DA7C7A922A0860000402E82 /* Spec */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9DE7EB7C22992582007EA6EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EB7D22992582007EA6EE /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DE7EC14229AA55B007EA6EE /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EC15229AA55B007EA6EE /* GameState.swift */,
+				9DE7EC16229AA55B007EA6EE /* CheckerState.swift */,
+				9DE7EC17229AA55B007EA6EE /* PlayerState.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		9DE7EC18229AA55B007EA6EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D316BE9229D0C820038E86C /* Entity */,
+				9D316BF6229D0EB90038E86C /* Checker.swift */,
+				9D316BF8229D0ECB0038E86C /* Player.swift */,
+				9D316BFA229D0ED50038E86C /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DE7EC2A229B81A9007EA6EE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EC2B229B81AE007EA6EE /* Main */,
+				9DE7EC2C229B81B6007EA6EE /* Board */,
+				9DA7C79822A06CB000402E82 /* Result */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9DE7EC2B229B81AE007EA6EE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7C794229EE83700402E82 /* MainViewController.swift */,
+				9DA7C796229EE8DA00402E82 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9DE7EC2C229B81B6007EA6EE /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EC2D229B8626007EA6EE /* BoardViewController.swift */,
+				9DE7EC32229B88F2007EA6EE /* BoardViewModel.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		9DE7EC2F229B88AC007EA6EE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9DE7EC30229B88B7007EA6EE /* ViewModel.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DE7EB092299160E007EA6EE /* Yutnori */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE7EB272299160F007EA6EE /* Build configuration list for PBXNativeTarget "Yutnori" */;
+			buildPhases = (
+				BA999BC4BBB7F45987CBC448 /* [CP] Check Pods Manifest.lock */,
+				9DE7EB062299160E007EA6EE /* Sources */,
+				9DE7EB072299160E007EA6EE /* Frameworks */,
+				9DE7EB082299160E007EA6EE /* Resources */,
+				A38FF3BD7B3EA9380D09149E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yutnori;
+			productName = Yutnori;
+			productReference = 9DE7EB0A2299160E007EA6EE /* Yutnori.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DE7EB1D2299160F007EA6EE /* YutnoriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE7EB2A2299160F007EA6EE /* Build configuration list for PBXNativeTarget "YutnoriTests" */;
+			buildPhases = (
+				11CB1D2F8170915A7BB39761 /* [CP] Check Pods Manifest.lock */,
+				9DE7EB1A2299160F007EA6EE /* Sources */,
+				9DE7EB1B2299160F007EA6EE /* Frameworks */,
+				9DE7EB1C2299160F007EA6EE /* Resources */,
+				30DF5B803F50B389E779A483 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DE7EB202299160F007EA6EE /* PBXTargetDependency */,
+			);
+			name = YutnoriTests;
+			productName = YutnoriTests;
+			productReference = 9DE7EB1E2299160F007EA6EE /* YutnoriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DE7EB022299160E007EA6EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = kawoou;
+				TargetAttributes = {
+					9DE7EB092299160E007EA6EE = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					9DE7EB1D2299160F007EA6EE = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 9DE7EB092299160E007EA6EE;
+					};
+				};
+			};
+			buildConfigurationList = 9DE7EB052299160E007EA6EE /* Build configuration list for PBXProject "Yutnori" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DE7EB012299160E007EA6EE;
+			productRefGroup = 9DE7EB0B2299160E007EA6EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DE7EB092299160E007EA6EE /* Yutnori */,
+				9DE7EB1D2299160F007EA6EE /* YutnoriTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DE7EB082299160E007EA6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE7EB772299255F007EA6EE /* Main.storyboard in Resources */,
+				9DE7EB752299255F007EA6EE /* Assets.xcassets in Resources */,
+				9DE7EB762299255F007EA6EE /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE7EB1C2299160F007EA6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11CB1D2F8170915A7BB39761 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YutnoriTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30DF5B803F50B389E779A483 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YutnoriTests/Pods-YutnoriTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YutnoriTests/Pods-YutnoriTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YutnoriTests/Pods-YutnoriTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A38FF3BD7B3EA9380D09149E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yutnori/Pods-Yutnori-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yutnori/Pods-Yutnori-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yutnori/Pods-Yutnori-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA999BC4BBB7F45987CBC448 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yutnori-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DE7EB062299160E007EA6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D316C20229D43E50038E86C /* IdentityTable.swift in Sources */,
+				9DA7C79A22A06CC700402E82 /* ResultViewController.swift in Sources */,
+				9D316C19229D428F0038E86C /* CheckerRepository.swift in Sources */,
+				9DA7C79C22A06DF700402E82 /* ResultViewModel.swift in Sources */,
+				9D316C2B229E99A20038E86C /* AppDependency.swift in Sources */,
+				9D316C1B229D42AA0038E86C /* CheckerRepositoryImpl.swift in Sources */,
+				9DE7EC1F229AA55B007EA6EE /* CheckerState.swift in Sources */,
+				9D316C03229D13640038E86C /* Repository.swift in Sources */,
+				9D316C25229E95090038E86C /* CoreDependency.swift in Sources */,
+				9D316C09229D13F00038E86C /* RepositoryError.swift in Sources */,
+				9DA7C78F229ED72100402E82 /* GameServiceImpl.swift in Sources */,
+				9D316C00229D12D90038E86C /* CommonError.swift in Sources */,
+				9DA7C797229EE8DA00402E82 /* MainViewModel.swift in Sources */,
+				9D316BF7229D0EB90038E86C /* Checker.swift in Sources */,
+				9DE7EC1E229AA55B007EA6EE /* GameState.swift in Sources */,
+				9D316C11229D23E10038E86C /* RealmType.swift in Sources */,
+				9D316BF4229D0DBC0038E86C /* GameTable.swift in Sources */,
+				9DA7C791229ED85D00402E82 /* GameServiceError.swift in Sources */,
+				9D316BF0229D0D250038E86C /* TableSupport.swift in Sources */,
+				9DE7EB742299255F007EA6EE /* AppDelegate.swift in Sources */,
+				9DE7EC20229AA55B007EA6EE /* PlayerState.swift in Sources */,
+				9D316C1E229D42FC0038E86C /* CheckerServiceImpl.swift in Sources */,
+				9D316C27229E95360038E86C /* RepositoryDependency.swift in Sources */,
+				9DA7C795229EE83700402E82 /* MainViewController.swift in Sources */,
+				9D316C15229D41900038E86C /* PlayerRepositoryImpl.swift in Sources */,
+				9D316BF9229D0ECB0038E86C /* Player.swift in Sources */,
+				9D316BEF229D0D250038E86C /* EntitySupport.swift in Sources */,
+				9D316BEB229D0C960038E86C /* CheckerTable.swift in Sources */,
+				9D316C0E229D1B9A0038E86C /* GameRepositoryImpl.swift in Sources */,
+				9DA7C793229EE5F900402E82 /* PlayerServiceImpl.swift in Sources */,
+				9DE7EC21229AA55B007EA6EE /* CheckerService.swift in Sources */,
+				9D316C23229E94DD0038E86C /* ServiceDependency.swift in Sources */,
+				9DE7EC31229B88B7007EA6EE /* ViewModel.swift in Sources */,
+				9D316BF2229D0D690038E86C /* PlayerTable.swift in Sources */,
+				9D316BFB229D0ED50038E86C /* Game.swift in Sources */,
+				9DE7EC22229AA55B007EA6EE /* GameService.swift in Sources */,
+				9D316C2D229EC2A90038E86C /* CheckerServiceError.swift in Sources */,
+				9D316BFF229D12D90038E86C /* AbstractError.swift in Sources */,
+				9DE7EC2E229B8626007EA6EE /* BoardViewController.swift in Sources */,
+				9D316C0C229D15FD0038E86C /* GameRepository.swift in Sources */,
+				9DE7EC23229AA55B007EA6EE /* PlayerService.swift in Sources */,
+				9D316C13229D3BE90038E86C /* PlayerRepository.swift in Sources */,
+				9D316C29229E98840038E86C /* SchedulerDependency.swift in Sources */,
+				9DE7EC33229B88F2007EA6EE /* BoardViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE7EB1A2299160F007EA6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4C89F522A56D30005F571F /* GameServiceSpec.swift in Sources */,
+				9D4C89F722A56F15005F571F /* MockGameRepository.swift in Sources */,
+				9DA7C7A722A083FF00402E82 /* MockDependency.swift in Sources */,
+				9D4C89F022A50508005F571F /* MockCheckerRepository.swift in Sources */,
+				9D4C8A0722A68E92005F571F /* ResultViewModelSpec.swift in Sources */,
+				9DA7C7AD22A0878900402E82 /* CheckRepositorySpec.swift in Sources */,
+				9DA7C7B122A0C34100402E82 /* DummyGame.swift in Sources */,
+				9D4C89FE22A68674005F571F /* MainViewModelSpec.swift in Sources */,
+				9D4C8A0522A68925005F571F /* MockPlayerService.swift in Sources */,
+				9D4C8A0322A687C2005F571F /* MockCheckerService.swift in Sources */,
+				9D4C8A0122A686C9005F571F /* MockGameService.swift in Sources */,
+				9D4C89E922A4FD1F005F571F /* GameRepositorySpec.swift in Sources */,
+				9D4C89F322A505E6005F571F /* MockError.swift in Sources */,
+				9DA7C7AB22A0861100402E82 /* ErrorSpec.swift in Sources */,
+				9D4C89ED22A4FF8A005F571F /* CheckerServiceSpec.swift in Sources */,
+				9DA7C7AF22A0C30100402E82 /* DummyChecker.swift in Sources */,
+				9D4C89E722A4FC37005F571F /* DummyPlayer.swift in Sources */,
+				9D4C89F922A57332005F571F /* MockPlayerRepository.swift in Sources */,
+				9D4C89EB22A4FDEB005F571F /* PlayerRepositorySpec.swift in Sources */,
+				9D4C89FB22A57F7A005F571F /* PlayerServiceSpec.swift in Sources */,
+				9D4C89E522A4FA9D005F571F /* RepositorySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DE7EB202299160F007EA6EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DE7EB092299160E007EA6EE /* Yutnori */;
+			targetProxy = 9DE7EB1F2299160F007EA6EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DE7EB6D2299255F007EA6EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DE7EB6E2299255F007EA6EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9DE7EB6F2299255F007EA6EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DE7EB702299255F007EA6EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DE7EB252299160F007EA6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DE7EB262299160F007EA6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DE7EB282299160F007EA6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1C0C73A30CAA77D9243CD3 /* Pods-Yutnori.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U2J29Y5X8;
+				INFOPLIST_FILE = "Yutnori/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.kawoou.Yutnori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DE7EB292299160F007EA6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF4A33FCBCCF9A37FF75E54 /* Pods-Yutnori.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U2J29Y5X8;
+				INFOPLIST_FILE = "Yutnori/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.kawoou.Yutnori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9DE7EB2B2299160F007EA6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF470F833408BD44DF95C90 /* Pods-YutnoriTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U2J29Y5X8;
+				INFOPLIST_FILE = "YutnoriTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.kawoou.YutnoriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yutnori.app/Yutnori";
+			};
+			name = Debug;
+		};
+		9DE7EB2C2299160F007EA6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 192B90F8F258005BDF198119 /* Pods-YutnoriTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4U2J29Y5X8;
+				INFOPLIST_FILE = "YutnoriTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.kawoou.YutnoriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yutnori.app/Yutnori";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DE7EB052299160E007EA6EE /* Build configuration list for PBXProject "Yutnori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE7EB252299160F007EA6EE /* Debug */,
+				9DE7EB262299160F007EA6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE7EB272299160F007EA6EE /* Build configuration list for PBXNativeTarget "Yutnori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE7EB282299160F007EA6EE /* Debug */,
+				9DE7EB292299160F007EA6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE7EB2A2299160F007EA6EE /* Build configuration list for PBXNativeTarget "YutnoriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE7EB2B2299160F007EA6EE /* Debug */,
+				9DE7EB2C2299160F007EA6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DE7EB022299160E007EA6EE /* Project object */;
+}
