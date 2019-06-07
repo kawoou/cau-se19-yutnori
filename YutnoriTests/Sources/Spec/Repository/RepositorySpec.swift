@@ -161,7 +161,7 @@ class RepositorySpec: QuickSpec {
                     }
                 }
 
-                context("when observes all") {
+                context("after observes all") {
                     var results = [[Checker]]()
 
                     beforeEach {

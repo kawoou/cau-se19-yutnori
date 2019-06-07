@@ -40,7 +40,7 @@ class GameServiceSpec: QuickSpec {
                 beforeEach {
                     _ = try? sut.find(by: 1).toBlocking().single()
                 }
-                it("gameRepository's find by id method should be called") {
+                it("GameRepository's find by id method should be called") {
                     expect(mockGameRepository.isFindByIdCalled) == true
                 }
             }
@@ -52,7 +52,7 @@ class GameServiceSpec: QuickSpec {
                 it("game's maxPlayerCount should be 5") {
                     expect(game.maxPlayerCount) == 5
                 }
-                it("gameRepository's ave method should be called") {
+                it("GameRepository's ave method should be called") {
                     expect(mockGameRepository.isSaveCalled) == true
                 }
             }
@@ -76,7 +76,7 @@ class GameServiceSpec: QuickSpec {
 
                         player = try? sut.join(game: DummyGame.waiting, player: DummyPlayer.noGame).toBlocking().single()
                     }
-                    it("gameRepository's save method should be called") {
+                    it("GameRepository's save method should be called") {
                         expect(mockGameRepository.isSaveCalled) == true
                     }
                     it("player's game id should be 1") {
@@ -91,7 +91,7 @@ class GameServiceSpec: QuickSpec {
 
                         player = try? sut.join(game: DummyGame.waiting, player: DummyPlayer.noGame).toBlocking().single()
                     }
-                    it("gameRepository's save method should be called") {
+                    it("GameRepository's save method should be called") {
                         expect(mockGameRepository.isSaveCalled) == true
                     }
                     it("player should be nil") {
@@ -113,7 +113,7 @@ class GameServiceSpec: QuickSpec {
                 it("game's turnCount should be 0") {
                     expect(game.turnCount) == 0
                 }
-                it("gameRepository's save method should be called") {
+                it("GameRepository's save method should be called") {
                     expect(mockGameRepository.isSaveCalled) == true
                 }
             }
@@ -175,10 +175,10 @@ class GameServiceSpec: QuickSpec {
 
                         newGame = try? sut.nextTurn(game: game).toBlocking().single()
                     }
-                    it("playerRepository's save method should be called") {
+                    it("PlayerRepository's save method should be called") {
                         expect(mockPlayerRepository.numberOfSaveCalled) == 2
                     }
-                    it("gameRepository's save method should be called") {
+                    it("GameRepository's save method should be called") {
                         expect(mockGameRepository.isSaveCalled) == true
                     }
                     it("newGame's status should be .finished") {
@@ -195,10 +195,10 @@ class GameServiceSpec: QuickSpec {
 
                         newGame = try? sut.nextTurn(game: DummyGame.starting).toBlocking().single()
                     }
-                    it("playerRepository's save method should not be called") {
+                    it("PlayerRepository's save method should not be called") {
                         expect(mockPlayerRepository.numberOfSaveCalled) == 0
                     }
-                    it("gameRepository's save method should be called") {
+                    it("GameRepository's save method should be called") {
                         expect(mockGameRepository.isSaveCalled) == true 
                     }
                     it("newGame's turnCount should be 1") {
@@ -211,7 +211,7 @@ class GameServiceSpec: QuickSpec {
                 beforeEach {
                     _ = try? sut.destory(game: DummyGame.waiting).toBlocking().single()
                 }
-                it("gameRepository's delete by id method should be called") {
+                it("GameRepository's delete by id method should be called") {
                     expect(mockGameRepository.isDeleteCalled) == true
                 }
             }

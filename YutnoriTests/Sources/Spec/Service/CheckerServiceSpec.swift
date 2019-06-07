@@ -123,7 +123,7 @@ class CheckerServiceSpec: QuickSpec {
                 beforeEach {
                     _ = try? sut.create(with: DummyPlayer.waiting).toBlocking().single()
                 }
-                it("MockCheckerRepository's save should be called") {
+                it("CheckerRepository's save should be called") {
                     expect(mockCheckerRepository.isSaveCalled) == true
                 }
             }
@@ -133,7 +133,7 @@ class CheckerServiceSpec: QuickSpec {
                         .subscribe()
                         .disposed(by: disposeBag)
                 }
-                it("MockCheckerRepository's observs by player should be called") {
+                it("CheckerRepository's observs by player should be called") {
                     expect(mockCheckerRepository.isObservesByPlayerCalled) == true
                 }
             }
@@ -147,11 +147,11 @@ class CheckerServiceSpec: QuickSpec {
 
                         newChecker = try? sut.move(checker: checker, count: -1).toBlocking().single()
                     }
-                    it("newChecker's area should be 8") {
+                    it("newChecker's area should be 3") {
                         expect(newChecker.area) == 3
                         expect(newChecker.status) == .alive
                     }
-                    it("checkerRepository's save method should be called") {
+                    it("CheckerRepository's save method should be called") {
                         expect(mockCheckerRepository.isSaveCalled) == true
                     }
 
@@ -162,7 +162,7 @@ class CheckerServiceSpec: QuickSpec {
 
                             newChecker = try? sut.move(checker: checker, count: -1).toBlocking().single()
                         }
-                        it("newChecker's area should be 8") {
+                        it("newChecker's area should be 0") {
                             expect(newChecker.area) == 0
                             expect(newChecker.status) == .idle
                         }
@@ -179,7 +179,7 @@ class CheckerServiceSpec: QuickSpec {
                         expect(newChecker.area) == 8
                         expect(newChecker.status) == .alive
                     }
-                    it("checkerRepository's save method should be called") {
+                    it("CheckerRepository's save method should be called") {
                         expect(mockCheckerRepository.isSaveCalled) == true
                     }
 
@@ -190,7 +190,7 @@ class CheckerServiceSpec: QuickSpec {
 
                             newChecker = try? sut.move(checker: checker, count: 4).toBlocking().single()
                         }
-                        it("newChecker's area should be 8") {
+                        it("newChecker's area should be 0") {
                             expect(newChecker.area) == 0
                             expect(newChecker.status) == .done
                         }
@@ -203,11 +203,11 @@ class CheckerServiceSpec: QuickSpec {
 
                         newChecker = try? sut.move(checker: checker, count: 4, choice: 20).toBlocking().single()
                     }
-                    it("newChecker's area should be 8") {
+                    it("newChecker's area should be 23") {
                         expect(newChecker.area) == 23
                         expect(newChecker.status) == .alive
                     }
-                    it("checkerRepository's save method should be called") {
+                    it("CheckerRepository's save method should be called") {
                         expect(mockCheckerRepository.isSaveCalled) == true
                     }
 
@@ -218,7 +218,7 @@ class CheckerServiceSpec: QuickSpec {
 
                             newChecker = try? sut.move(checker: checker, count: 5, choice: 27).toBlocking().single()
                         }
-                        it("newChecker's area should be 8") {
+                        it("newChecker's area should be 0") {
                             expect(newChecker.area) == 0
                             expect(newChecker.status) == .done
                         }
@@ -236,7 +236,7 @@ class CheckerServiceSpec: QuickSpec {
 
                     _ = try? sut.depend(by: checker).toBlocking().first()
                 }
-                it("checkerRepository's save method should be called") {
+                it("CheckerRepository's save method should be called") {
                     expect(mockCheckerRepository.numberOfSaveCalled) == 1
                 }
             }
@@ -244,7 +244,7 @@ class CheckerServiceSpec: QuickSpec {
                 beforeEach {
                     _ = try? sut.destory(checker: DummyChecker.alive).toBlocking().single()
                 }
-                it("checkerRepository's delete should be called") {
+                it("CheckerRepository's delete should be called") {
                     expect(mockCheckerRepository.isDeleteCalled) == true
                 }
             }
@@ -259,7 +259,7 @@ class CheckerServiceSpec: QuickSpec {
 
                     _ = try? sut.killChecker(by: checker, on: DummyGame.waiting).toBlocking().first()
                 }
-                it("checkerRepository's save method should be called") {
+                it("CheckerRepository's save method should be called") {
                     expect(mockCheckerRepository.numberOfSaveCalled) == 1
                 }
             }

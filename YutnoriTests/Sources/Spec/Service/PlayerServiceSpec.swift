@@ -36,7 +36,7 @@ class PlayerServiceSpec: QuickSpec {
                 beforeEach {
                     _ = try? sut.create().toBlocking().single()
                 }
-                it("playerRepository's save method should be called") {
+                it("PlayerRepository's save method should be called") {
                     expect(mockPlayerRepository.isSaveCalled) == true
                 }
             }
@@ -46,7 +46,7 @@ class PlayerServiceSpec: QuickSpec {
                         .subscribe()
                         .disposed(by: disposeBag)
                 }
-                it("playerRepository's observes by game method should be called") {
+                it("PlayerRepository's observes by game method should be called") {
                     expect(mockPlayerRepository.isObservesByGameCalled) == true
                 }
             }
